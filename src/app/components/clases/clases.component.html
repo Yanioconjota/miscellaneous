@@ -1,0 +1,40 @@
+<div [ngClass]="alerta" class="alert"
+role="alert">
+  <strong>Alert </strong>example
+</div>
+
+<div class="btn-group">
+  <button type="button" class="btn btn-info" (click)="alerta='alert-info'">Info</button>
+  <button type="button" class="btn btn-success" (click)="alerta='alert-success'">Success</button>
+  <button type="button" class="btn btn-danger" (click)="alerta='alert-danger'">Reset</button>
+</div>
+
+<pre class="mt-4 bg-light p-2 border rounded" [ngClass]="{'text-danger border-danger' : propiedades.danger, 'text-info border-info' : !propiedades.danger}">
+  [ngClass] propiedades.danger: {{ propiedades.danger }}
+</pre>
+
+<button type="button"
+class="btn"
+(click)="propiedades.danger = !propiedades.danger"
+[ngClass]="{'btn-danger' : propiedades.danger, 'btn-info' : !propiedades.danger}">
+  Cambiar a 
+  <span *ngIf="!propiedades.danger">danger</span>
+  <span *ngIf="propiedades.danger">info</span>
+</button>
+
+<hr>
+
+<pre class="mt-4 bg-light p-2 border rounded" [ngClass]="{'text-dark border-dark' : !loading, 'text-primary border-primary' : loading}">
+  [ngClass] loading: {{ loading }}
+</pre>
+
+<button type="button"
+class="btn btn-primary"
+[ngClass]="{'btn-dark' : !loading, 'btn-primary' : loading}"
+[disabled]="loading"
+(click)="ejecutar()">
+  <i class="fa mr-1"
+  [ngClass]="{ 'fa-save' : !loading, 'fa-refresh fa-spin' : loading }"></i>
+  <span *ngIf="loading">Guardaando cambios...</span>
+  <span *ngIf="!loading">Guardar</span>
+</button>
