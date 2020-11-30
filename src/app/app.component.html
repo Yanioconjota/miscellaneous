@@ -8,4 +8,11 @@
   <p>Hola mundo desde app.component</p>
   <hr>
   <app-clases></app-clases>
+  <hr>
+  <pre appResaltado class="mt-4 p-2 border rounded text-primary border-primary">
+    Estilos con directivas | appResaltado | Color default amarillo
+  </pre>
+  <pre [appResaltado]="'#cbcbcb'" class="mt-4 p-2 border rounded text-primary border-primary">
+    Estilos con directivas | [appResaltado]="'#cbcbcb'" 
+  </pre>
 </div>
