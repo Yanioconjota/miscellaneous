@@ -1,0 +1,89 @@
+<div *ngIf="Constructor"
+class="d-flex justify-content-between alert alert-dark"
+role="alert">
+  <span>This is an <strong>Constructor</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="Constructor = !Constructor">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="OnInit"
+class="d-flex justify-content-between alert alert-primary"
+role="alert">
+  <span>This is an <strong>OnInit</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="OnInit = !OnInit">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="OnChanges"
+class="d-flex justify-content-between alert alert-secondary"
+role="alert">
+  <span>This is an <strong>OnChanges</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="OnChanges = !OnChanges">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="DoCheck"
+class="d-flex justify-content-between alert alert-success"
+role="alert">
+  <span>This is an <strong>DoCheck</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="DoCheck = !DoCheck">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="AfterContentInit"
+class="d-flex justify-content-between alert alert-danger"
+role="alert">
+  <span>This is an <strong>AfterContentInit</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="AfterContentInit = !AfterContentInit">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="AfterContentChecked"
+class="d-flex justify-content-between alert alert-warning"
+role="alert">
+  <span>This is an <strong>AfterContentChecked</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="AfterContentChecked = !AfterContentChecked">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="AfterViewInit"
+class="d-flex justify-content-between alert alert-info"
+role="alert">
+  <span>This is an <strong>AfterViewInit</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="AfterViewInit = !AfterViewInit">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="AfterViewChecked"
+class="d-flex justify-content-between alert alert-light"
+role="alert">
+  <span>This is an <strong>AfterViewChecked</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="AfterViewChecked = !AfterViewChecked">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+<div *ngIf="OnDestroy"
+class="d-flex justify-content-between alert alert-dark"
+role="alert">
+  <span>This is an <strong>OnDestroy</strong> alert!!!</span>
+  <a href="javascript:void(0)" (click)="OnDestroy = !OnDestroy">
+    <i class="fa fa-close text-dark" aria-hidden="true"></i>
+  </a>
+</div>
+
+<pre appResaltado class="mt-4 p-2 border rounded text-primary border-primary">
+  Activar onChange</pre>
+
+<pre class="mt-4 p-2 border rounded text-dark border-dark">
+  Constructor: {{ Constructor }}
+  OnInit: {{ OnInit }}
+  OnChanges: {{ OnChanges }}
+  DoCheck: {{ DoCheck }}
+  AfterContentInit: {{ AfterContentInit }}
+  AfterContentChecked: {{ AfterContentChecked }}
+  AfterViewInit: {{ AfterViewInit }}
+  AfterViewChecked: {{ AfterViewChecked }}
+  OnDestroy: {{ OnDestroy }}
+</pre>
+
+<a class="btn btn-danger mb-5" target="_blank" href="https://angular.io/guide/lifecycle-hooks">Ver documentación de Angular</a>

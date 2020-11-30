@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './components/home/home.component';
+import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
 import { UsuarioComponent } from './components/usuario/usuario.component';
 import { USUARIO_ROUTES } from './components/usuario/usuario.routes';
 
@@ -12,6 +13,7 @@ const routes: Routes = [
     component: UsuarioComponent,
     children: USUARIO_ROUTES
   },
+  { path: 'lifecycle', component: LifecycleComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'home' }
 ];
 
