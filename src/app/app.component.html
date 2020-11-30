@@ -1,19 +1,8 @@
+<app-navbar></app-navbar>
 <div class="container mt-4">
   <h1>Angular <small>Demo</small></h1>
   <small><em class="text-muted">M10MMG</em></small>
   <hr>
-  <app-ng-style></app-ng-style>
-  <hr>
-  <app-css></app-css>
-  <p>Hola mundo desde app.component</p>
-  <hr>
-  <app-clases></app-clases>
-  <hr>
-  <pre appResaltado class="mt-4 p-2 border rounded text-primary border-primary">
-  Estilos con directivas | appResaltado | Color default amarillo</pre>
-  <pre [appResaltado]="'#cbcbcb'" class="mt-4 p-2 border rounded text-primary border-primary">
-  Estilos con directivas | [appResaltado]="'#cbcbcb'"</pre>
+  <router-outlet></router-outlet>
   
-  <hr>
-  <app-ng-switch></app-ng-switch>
 </div>
